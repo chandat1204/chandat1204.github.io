@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+</head>
+
+<body>
+    <form>
+        <table border="1" cellpadding="10" align="center">
+            <tr>
+                <td colspan="2" style="text-align:center; font-size:25px; font-weight:bold">ĐĂNG KÝ</td>
+            </tr>
+            <tr>
+                <td>Full name</td>
+                <td><input type="text" id="txName" placeholder="Nhập tên đầy đủ" size="33" /></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="txtUser" placeholder="Nhập tên đăng nhập" size="33" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id="txtPass1" placeholder="Nhập mật khẩu" size="33" /></td>
+            </tr>
+            <tr>
+                <td>Nhập lại password</td>
+                <td><input type="password" id="txtPass2" placeholder="Nhập lại mật khẩu" size="33" /></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="radGioiTinh" id="radNam" checked="checked" /> <label>Nam</label>
+                    <input type="radio" name="radGioiTinh" id="radNu" /> <label>Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>
+                    <input type="date" id="dtpNgaySinh" />
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><textarea id="txtaDiaChi" rows="3" cols="34"></textarea></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text" id="txtDienThoai" size="33" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="txtEmail" size="33" /></td>
+            </tr>
+            <tr>
+                18
+                <td>Hình đại diện</td>
+                <td><input type="file" id="fileHinh" /></td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <input type="checkbox" id="chkXemPhim" /><label>Xem phim</label>
+                    <input type="checkbox" id="chkNgheNhac" /><label>Nghe nhạc</label>
+                    <input type="checkbox" id="chkDocSach" /><label>Đọc sách</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <input type="reset" id="btnReset" value="Reset" />&nbsp;&nbsp;&nbsp;
+                    <input type="submit" id="btnOK" value="OK" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

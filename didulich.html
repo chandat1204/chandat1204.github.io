@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký du lịch</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="10" align="center">
+        <tr>
+            <td colspan="2" style="text-align:center; font-size:25px; font-weight:bold">ĐĂNG KÝ Du Lịch</td>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" id="txName" placeholder="Nhập tên đầy đủ" size="33" /></td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><textarea id="txtaDiaChi" rows="3" cols="34"></textarea></td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td><input type="text" id="txtDienThoai" size="33" /></td>
+        </tr>
+        <tr>
+            <td>Khách Việt Nam</td>
+            <td>
+                <input type="checkbox" id="chkkhachvietnam" />
+            </td>
+        </tr>
+        <tr>
+            <td>Chọn tour</td>
+            <td>
+                <select id="cars" name="cars">
+                    <option value="volvo">Buôn mê thuột-Gia lai-Kontum</option>
+                    <option value="saab">Nha Trang</option>
+                    <option value="fiat">Đà Nẳng</option>
+                    <option value="audi">Hà Nội</option>
+                </select>
+            </td>
+        </tr>
+        <td>Phương tiện</td>
+        <td>
+            <input type="radio" name="radphuongtien" id="radMaybay" checked="checked" /> <label>Máy bay</label>
+            <input type="radio" name="radphuongtien" id="radXeoto" /> <label>Xe ô tô</label>
+        </td>
+        <tr>
+            <td>
+                <fieldset style="width:300px; border-style:dashed">
+                    <legend style="color:#00F"> Số lượng đoàn khách</legend>
+                    <table cellpadding="10">
+                        <td>Người Lớn</td>
+                        <td><input type="text" id="txtnguoilon" size="3" /></td>
+                        <td>Trẻ em</td>
+                        <td><input type="text" id="txttreem" size="3" /></td>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Ghi chú thêm</h2>
+                <form action="/action_page.php">
+                    <td><select id="cars" name="cars" size="3">
+                    <option value="volvo">Có 2 trẻ em dưới 6 tuổi</option>
+                    <option value="saab">Có 2 người ăn chay</option> </select><br><br></td>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" style="text-align:center">
+                <input type="submit" id="btndongy" value="Đồng ý" />
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
