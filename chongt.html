@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RadioButton</title>
+</head>
+
+<body>
+    <h3>Chọn giới tính của bạn</h3>
+    <input type="radio" value="Nam" name="GioiTinh" /> Nam <br/>
+    <input type="radio" value="Nữ" name="GioiTinh" /> Nữ <br/>
+    <input type="button" id="btnHienThi" value="Hiển Thị" />
+    <script language="JavaScript">
+        document.getElementById("btnHienThi").onclick = function() {
+            var radioButton = document.getElementsByName("GioiTinh");
+            for (var i = 0; i < radioButton; i++) {
+                if (radioButton[i].checked === true) {
+                    alert(radioButton[i].value);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
