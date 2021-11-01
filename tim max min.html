@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhập dãy số (mỗi số cách nhau dấu space)
+    <input type="text" />
+    <button>Tìm min max</button>
+
+    <div>
+
+    </div>
+
+    <script language="javascript">
+        const btn = document.querySelector('button');
+        const inp = document.querySelector('input');
+        
+        btn.addEventListener('click', function(ev){
+            var arrNumber = inp.value.split(' ');
+
+            document.querySelector('div').innerHTML = `Min là: ${Math.min(...arrNumber)} <br />Max là: ${Math.max(...arrNumber)}`;
+            inp.value = "";
+            inp.focus();
+        });
+    
+    </script>
+</body>
+</html>

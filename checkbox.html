@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Checkbox</title>
+</head>
+
+<body>
+    <h2>Checkbox trong JavaScript</h2>
+    <input type="checkbox" id="chkThich" value="1" />
+    <label>Bạn có thích Ngành Công Nghệ Thông Tin không?</label>
+    <script language="JavaScript">
+        document.getElementById('chkThich').onclick = function(e) {
+            if (chkThich.checked)
+                alert("Bạn vừa thích Ngành CNTT");
+            else
+                alert("Bạn vừa bỏ thích Ngành CNTT");
+        }
+    </script>
+</body>
+
+</html>
